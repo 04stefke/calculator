@@ -1,0 +1,51 @@
+.switch-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	position: relative;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Numbers (1, 2, 3) */
+.theme-number {
+	font-size: 14px;
+	color: white;
+}
+
+/* Slider Track */
+.slider {
+	position: relative;
+	width: 80px;
+	height: 30px;
+	background-color: #262c49;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	padding: 2px;
+}
+
+/* Sliding Button */
+.switch-btn {
+	position: absolute;
+	top: 5px;
+	left: 7px;
+	width: 20px;
+	height: 20px;
+	background-color: #ff3d3d;
+	border-radius: 50%;
+	transition: transform 0.3s ease;
+}
+
+/* Positions for the button */
+.slider[data-position="1"] .switch-btn {
+	transform: translateX(0px);
+}
+
+.slider[data-position="2"] .switch-btn {
+	transform: translateX(25px);
+}
+
+.slider[data-position="3"] .switch-btn {
+	transform: translateX(45px);
+}

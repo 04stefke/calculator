@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="inputSwitch.css" />
 		<link
 			rel="shortcut icon"
 			href="./public/favicon-32x32.png"
@@ -16,9 +17,18 @@
 	>
 		<section class="flex items-center justify-between sectionWidth">
 			<h3 class="font-bold text-2xl">calc</h3>
-			<div class="flex items-center gap-2">
-				<p class="text-xs font-bold">THEME</p>
-				<input type="radio" id="theme1" name="theme" value="theme1" checked />
+			<div class="flex items-center relative gap-2">
+				<p class="text-xs font-bold absolute top-[60%] left-[-50px]">THEME</p>
+				<div class="switch-container">
+					<div class="flex w-[90%] justify-between items-center px-2">
+						<span class="theme-number">1</span>
+						<span class="theme-number">2</span>
+						<span class="theme-number">3</span>
+					</div>
+					<div class="slider">
+						<div class="switch-btn" id="switch"></div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section
