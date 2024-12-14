@@ -4,22 +4,22 @@
 
 @layer components {
 	.grayBtn {
-		@apply w-14 md:w-20 h-16 md:h-12 bg-keyLightGrayBg text-textDarkGrayish rounded-lg cursor-pointer font-bold text-3xl shadow-inner-grayShadow;
+		@apply w-16 md:w-1/4 h-16 md:h-14 bg-keyLightGrayBg text-textDarkGrayish rounded-lg cursor-pointer font-bold text-3xl shadow-inner-grayShadow;
 	}
 	.redEqualBtn {
-		@apply w-1/2 h-16 md:h-14 bg-keyRedBgToggle text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-redShadow;
+		@apply w-1/2 h-14 md:h-12 bg-keyRedBgToggle text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-redShadow;
 	}
 	.blueResetBtn {
-		@apply w-1/2 h-16 md:h-14 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-normalShadow;
+		@apply w-1/2 h-14 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-normalShadow;
 	}
 	.blueDelBtn {
-		@apply w-14 md:w-20 h-16 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-2xl shadow-inner-normalShadow;
+		@apply w-16 md:w-1/4 h-16 md:h-14 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-2xl shadow-inner-normalShadow;
 	}
 	.btnComponents {
-		@apply w-full flex justify-between items-center;
+		@apply w-full flex justify-between items-center gap-3;
 	}
 	.form {
-		@apply flex flex-col items-center justify-between w-full h-full;
+		@apply flex flex-col items-center justify-between w-full h-full gap-3;
 	}
 	.sectionWidth {
 		@apply w-[300px] md:w-[400px];
