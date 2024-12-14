@@ -13,7 +13,7 @@
 		@apply w-1/2 h-16 md:h-14 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-normalShadow;
 	}
 	.blueDelBtn {
-		@apply w-14 md:w-20 h-16 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-3xl shadow-inner-normalShadow;
+		@apply w-14 md:w-20 h-16 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-2xl shadow-inner-normalShadow;
 	}
 	.btnComponents {
 		@apply w-full flex justify-between items-center;
