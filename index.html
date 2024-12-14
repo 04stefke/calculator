@@ -22,44 +22,42 @@
 			</div>
 		</section>
 		<section
-			class="bg-screenBackground sectionWidth h-[100px] rounded-xl flex items-center justify-end px-5"
+			class="bg-screenBackground sectionWidth h-[100px] rounded-xl flex flex-col items-end justify-center px-5"
 		>
-			<p class="text-3xl font-bold">1203901283</p>
+			<p id="displayOutput"></p>
+			<p class="text-3xl font-bold" id="displayInput"></p>
 		</section>
 		<section
 			class="flex items-center flex-col sectionWidth h-[400px] bg-toggleBackground p-5 rounded-xl"
 		>
-			<form
-				action=""
-				class="form"
-			>
+			<form action="" class="form">
 				<div class="btnComponents">
-					<input type="button" value="7" class="grayBtn" />
-					<input type="button" value="8" class="grayBtn" />
-					<input type="button" value="9" class="grayBtn" />
-					<input type="button" value="DEL" class="blueDelBtn" />
+					<input type="button" value="7" class="grayBtn" id="key" />
+					<input type="button" value="8" class="grayBtn" id="key" />
+					<input type="button" value="9" class="grayBtn" id="key" />
+					<input type="button" value="del" class="blueDelBtn" id="key" />
 				</div>
 				<div class="btnComponents">
-					<input type="button" value="4" class="grayBtn" />
-					<input type="button" value="5" class="grayBtn" />
-					<input type="button" value="6" class="grayBtn" />
-					<input type="button" value="+" class="grayBtn" />
+					<input type="button" value="4" class="grayBtn" id="key" />
+					<input type="button" value="5" class="grayBtn" id="key" />
+					<input type="button" value="6" class="grayBtn" id="key" />
+					<input type="button" value="+" class="grayBtn" id="key" />
 				</div>
 				<div class="btnComponents">
-					<input type="button" value="1" class="grayBtn" />
-					<input type="button" value="2" class="grayBtn" />
-					<input type="button" value="3" class="grayBtn" />
-					<input type="button" value="-" class="grayBtn" />
+					<input type="button" value="1" class="grayBtn" id="key" />
+					<input type="button" value="2" class="grayBtn" id="key" />
+					<input type="button" value="3" class="grayBtn" id="key" />
+					<input type="button" value="-" class="grayBtn" id="key" />
 				</div>
 				<div class="btnComponents">
-					<input type="button" value="." class="grayBtn" />
-					<input type="button" value="0" class="grayBtn" />
-					<input type="button" value="/" class="grayBtn" />
-					<input type="button" value="x" class="grayBtn" />
+					<input type="button" value="." class="grayBtn" id="key" />
+					<input type="button" value="0" class="grayBtn" id="key" />
+					<input type="button" value="/" class="grayBtn" id="key" />
+					<input type="button" value="x" class="grayBtn" id="key" />
 				</div>
 				<div class="flex justify-between w-full gap-3">
-					<input type="button" value="Reset" class="blueResetBtn" />
-					<input type="button" value="=" class="redEqualBtn" />
+					<input type="button" value="Reset" class="blueResetBtn" id="key" />
+					<input type="button" value="=" class="redEqualBtn" id="key" />
 				</div>
 			</form>
 		</section>

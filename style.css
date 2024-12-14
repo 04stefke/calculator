@@ -10,10 +10,10 @@
 		@apply w-1/2 h-14 md:h-12 bg-keyRedBgToggle text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-redShadow;
 	}
 	.blueResetBtn {
-		@apply w-1/2 h-14 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-normalShadow;
+		@apply uppercase w-1/2 h-14 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-3xl shadow-inner-normalShadow;
 	}
 	.blueDelBtn {
-		@apply w-16 md:w-1/4 h-16 md:h-14 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-2xl shadow-inner-normalShadow;
+		@apply uppercase w-16 md:w-1/4 h-16 md:h-14 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-2xl shadow-inner-normalShadow;
 	}
 	.btnComponents {
 		@apply w-full flex justify-between items-center gap-3;
