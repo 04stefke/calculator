@@ -15,4 +15,13 @@
 	.blueDelBtn {
 		@apply w-14 md:w-20 h-16 md:h-12 bg-keyBg text-textWhite rounded-lg cursor-pointer font-bold text-lg md:text-3xl shadow-inner-normalShadow;
 	}
+	.btnComponents {
+		@apply w-full flex justify-between items-center;
+	}
+	.form {
+		@apply flex flex-col items-center justify-between w-full h-full;
+	}
+	.sectionWidth {
+		@apply w-[300px] md:w-[400px];
+	}
 }
