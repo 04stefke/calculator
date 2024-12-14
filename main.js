@@ -2,6 +2,7 @@ const slider = document.querySelector(".slider");
 const keys = document.querySelectorAll("#key");
 const displayOutput = document.getElementById("displayOutput");
 const displayInput = document.getElementById("displayInput");
+const body = document.body;
 
 let input = "";
 let currentPosition = 1;
@@ -28,7 +29,15 @@ for (let key of keys) {
 	});
 }
 
+function switchTheme(position) {
+	body.classList.remove("theme-1", "theme-2", "theme-3");
+	body.classList.add(`theme-${position}`);
+}
+
 slider.addEventListener("click", () => {
-	currentPosition = currentPosition < 3 ? currentPosition + 1 : 1;
-	slider.setAttribute("data-position", currentPosition);
+	currentPosition = currentPosition < 3 ? currentPosition + 1 : 1; // Cycle through positions (1 -> 2 -> 3 -> 1)
+	slider.setAttribute("data-position", currentPosition); // Update slider data attribute
+	switchTheme(currentPosition); // Switch theme
 });
+
+switchTheme(currentPosition);
