@@ -30,14 +30,26 @@ for (let key of keys) {
 }
 
 function switchTheme(position) {
+	currentPosition = position;
 	body.classList.remove("theme-1", "theme-2", "theme-3");
 	body.classList.add(`theme-${position}`);
+	slider.setAttribute("data-position", currentPosition);
+
+	localStorage.setItem("themePosition", position);
 }
 
 slider.addEventListener("click", () => {
-	currentPosition = currentPosition < 3 ? currentPosition + 1 : 1; // Cycle through positions (1 -> 2 -> 3 -> 1)
-	slider.setAttribute("data-position", currentPosition); // Update slider data attribute
-	switchTheme(currentPosition); // Switch theme
+	currentPosition = currentPosition < 3 ? currentPosition + 1 : 1;
+	switchTheme(currentPosition);
 });
 
-switchTheme(currentPosition);
+window.addEventListener("DOMContentLoaded", () => {
+	const savedPosition = localStorage.getItem('themePosition')
+	if(savedPosition) {
+		switchTheme(Number(savedPosition));
+	}else {
+		switchTheme(1); 
+	}
+})
+
+
