@@ -19,8 +19,8 @@ export default {
 				"inner-grayShadow": "inset 0 -3px 3px hsl(28, 16%, 65%)",
 			},
 			fontFamily: {
-				leagueSpartan: ['League Spartan', 'sans-serif']
-			}
+				leagueSpartan: ['"League Spartan"', "sans-serif"],
+			},
 		},
 	},
 	plugins: [],
