@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - [Solution](https://github.com/04stefke/calculator)
-- [Live Demo](https://stefans-calculator-challange.netlify.app)
+- [Live Demo](https://stefans-calculator-challenge.netlify.app)
 
 ### Built with
 
